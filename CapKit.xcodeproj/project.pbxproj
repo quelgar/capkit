@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		091954A50D25FF59009C7F12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091954A40D25FF59009C7F12 /* Foundation.framework */; };
+		091955970D2610F9009C7F12 /* PacketDumpDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 091955960D2610F9009C7F12 /* PacketDumpDoc.m */; };
+		091955AC0D26132D009C7F12 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091955AB0D26132D009C7F12 /* MainMenu.xib */; };
+		091955AE0D261347009C7F12 /* DocumentWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091955AD0D261347009C7F12 /* DocumentWindow.xib */; };
+		093BA8E70D16838B00F6D2BF /* PCapStats.h in Headers */ = {isa = PBXBuildFile; fileRef = 093BA8DB0D16838B00F6D2BF /* PCapStats.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		093BA8E80D16838B00F6D2BF /* PCapSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 093BA8DC0D16838B00F6D2BF /* PCapSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		093BA8EA0D16838B00F6D2BF /* PCapStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 093BA8DE0D16838B00F6D2BF /* PCapStats.m */; };
+		093BA8EB0D16838B00F6D2BF /* PCapSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 093BA8DF0D16838B00F6D2BF /* PCapSession.m */; };
+		093BA8EC0D16838B00F6D2BF /* PCapPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 093BA8E00D16838B00F6D2BF /* PCapPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		093BA8EE0D16838B00F6D2BF /* PCapPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 093BA8E20D16838B00F6D2BF /* PCapPacket.m */; };
+		093BA8F50D16854300F6D2BF /* PCapAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 093BA8F30D16854300F6D2BF /* PCapAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		093BA8F60D16854300F6D2BF /* PCapAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 093BA8F40D16854300F6D2BF /* PCapAddress.m */; };
+		094375BE0D1E5CF1008B6C19 /* CapKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 094375BD0D1E5CF1008B6C19 /* CapKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		094375C00D1E5D58008B6C19 /* Globals.h in Headers */ = {isa = PBXBuildFile; fileRef = 094375BF0D1E5D58008B6C19 /* Globals.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		095073D20D1C9DEF00A11309 /* PCapDeviceList.h in Headers */ = {isa = PBXBuildFile; fileRef = 095073D00D1C9DEF00A11309 /* PCapDeviceList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		095073D30D1C9DEF00A11309 /* PCapDeviceList.m in Sources */ = {isa = PBXBuildFile; fileRef = 095073D10D1C9DEF00A11309 /* PCapDeviceList.m */; };
+		095073DE0D1CE7A700A11309 /* PCapDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 095073DC0D1CE7A700A11309 /* PCapDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		095073DF0D1CE7A700A11309 /* PCapDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 095073DD0D1CE7A700A11309 /* PCapDevice.m */; };
+		0950740C0D1CEFF200A11309 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 0950740B0D1CEFF200A11309 /* Util.m */; };
+		09E970220D2F32460079462F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E970210D2F32460079462F /* AppKit.framework */; };
+		09E970D90D2F325E0079462F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091954A40D25FF59009C7F12 /* Foundation.framework */; };
+		09E9724D0D2F34C70079462F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E9724C0D2F34C70079462F /* main.m */; };
+		09E973070D308E220079462F /* CapKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* CapKit.framework */; };
+		09E973360D309EFE0079462F /* CapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* CapKit.framework */; };
+		09E973460D30A5610079462F /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09E973450D30A5610079462F /* license.txt */; };
+		09E973470D30A5610079462F /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 09E973450D30A5610079462F /* license.txt */; };
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09E972A30D3085940079462F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216 /* CapKit */;
+			remoteInfo = CapKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09E973090D308E400079462F /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09E973070D308E220079462F /* CapKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		091954A40D25FF59009C7F12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		091955700D260599009C7F12 /* SimpleCap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		091955720D260599009C7F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SimpleCap/Info.plist; sourceTree = "<group>"; };
+		091955950D2610F9009C7F12 /* PacketDumpDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PacketDumpDoc.h; path = SimpleCap/PacketDumpDoc.h; sourceTree = "<group>"; };
+		091955960D2610F9009C7F12 /* PacketDumpDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PacketDumpDoc.m; path = SimpleCap/PacketDumpDoc.m; sourceTree = "<group>"; };
+		091955AB0D26132D009C7F12 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = SimpleCap/MainMenu.xib; sourceTree = "<group>"; };
+		091955AD0D261347009C7F12 /* DocumentWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DocumentWindow.xib; path = SimpleCap/DocumentWindow.xib; sourceTree = "<group>"; };
+		093BA8DB0D16838B00F6D2BF /* PCapStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PCapStats.h; path = src/PCapStats.h; sourceTree = "<group>"; };
+		093BA8DC0D16838B00F6D2BF /* PCapSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PCapSession.h; path = src/PCapSession.h; sourceTree = "<group>"; };
+		093BA8DE0D16838B00F6D2BF /* PCapStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCapStats.m; path = src/PCapStats.m; sourceTree = "<group>"; };
+		093BA8DF0D16838B00F6D2BF /* PCapSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCapSession.m; path = src/PCapSession.m; sourceTree = "<group>"; };
+		093BA8E00D16838B00F6D2BF /* PCapPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PCapPacket.h; path = src/PCapPacket.h; sourceTree = "<group>"; };
+		093BA8E20D16838B00F6D2BF /* PCapPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCapPacket.m; path = src/PCapPacket.m; sourceTree = "<group>"; };
+		093BA8F30D16854300F6D2BF /* PCapAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PCapAddress.h; path = src/PCapAddress.h; sourceTree = "<group>"; };
+		093BA8F40D16854300F6D2BF /* PCapAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCapAddress.m; path = src/PCapAddress.m; sourceTree = "<group>"; };
+		094375BD0D1E5CF1008B6C19 /* CapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CapKit.h; path = src/CapKit.h; sourceTree = "<group>"; };
+		094375BF0D1E5D58008B6C19 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Globals.h; path = src/Globals.h; sourceTree = "<group>"; };
+		095073D00D1C9DEF00A11309 /* PCapDeviceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PCapDeviceList.h; path = src/PCapDeviceList.h; sourceTree = "<group>"; };
+		095073D10D1C9DEF00A11309 /* PCapDeviceList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCapDeviceList.m; path = src/PCapDeviceList.m; sourceTree = "<group>"; };
+		095073DC0D1CE7A700A11309 /* PCapDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PCapDevice.h; path = src/PCapDevice.h; sourceTree = "<group>"; };
+		095073DD0D1CE7A700A11309 /* PCapDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PCapDevice.m; path = src/PCapDevice.m; sourceTree = "<group>"; };
+		095074090D1CEE5500A11309 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Util.h; path = src/Util.h; sourceTree = "<group>"; };
+		0950740B0D1CEFF200A11309 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Util.m; path = src/Util.m; sourceTree = "<group>"; };
+		09E970210D2F32460079462F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		09E9724C0D2F34C70079462F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SimpleCap/main.m; sourceTree = "<group>"; };
+		09E973450D30A5610079462F /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		32DBCF5E0370ADEE00C91783 /* CapKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapKit_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* CapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0919556E0D260599009C7F12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E973360D309EFE0079462F /* CapKit.framework in Frameworks */,
+				09E970220D2F32460079462F /* AppKit.framework in Frameworks */,
+				09E970D90D2F325E0079462F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091954A50D25FF59009C7F12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* CapKit.framework */,
+				091955700D260599009C7F12 /* SimpleCap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* CapKit */ = {
+			isa = PBXGroup;
+			children = (
+				094375BD0D1E5CF1008B6C19 /* CapKit.h */,
+				094375BF0D1E5D58008B6C19 /* Globals.h */,
+				095074090D1CEE5500A11309 /* Util.h */,
+				0950740B0D1CEFF200A11309 /* Util.m */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				091955790D2605F2009C7F12 /* SimpleCap */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				09E973450D30A5610079462F /* license.txt */,
+			);
+			name = CapKit;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				093BA8F30D16854300F6D2BF /* PCapAddress.h */,
+				093BA8F40D16854300F6D2BF /* PCapAddress.m */,
+				093BA8DB0D16838B00F6D2BF /* PCapStats.h */,
+				093BA8DC0D16838B00F6D2BF /* PCapSession.h */,
+				093BA8DE0D16838B00F6D2BF /* PCapStats.m */,
+				093BA8DF0D16838B00F6D2BF /* PCapSession.m */,
+				095073DC0D1CE7A700A11309 /* PCapDevice.h */,
+				095073DD0D1CE7A700A11309 /* PCapDevice.m */,
+				093BA8E00D16838B00F6D2BF /* PCapPacket.h */,
+				093BA8E20D16838B00F6D2BF /* PCapPacket.m */,
+				095073D00D1C9DEF00A11309 /* PCapDeviceList.h */,
+				095073D10D1C9DEF00A11309 /* PCapDeviceList.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		091955790D2605F2009C7F12 /* SimpleCap */ = {
+			isa = PBXGroup;
+			children = (
+				091955940D2610CA009C7F12 /* Classes */,
+				091955850D260666009C7F12 /* Resources */,
+				09E9724C0D2F34C70079462F /* main.m */,
+			);
+			name = SimpleCap;
+			sourceTree = "<group>";
+		};
+		091955850D260666009C7F12 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				091955720D260599009C7F12 /* Info.plist */,
+				091955AB0D26132D009C7F12 /* MainMenu.xib */,
+				091955AD0D261347009C7F12 /* DocumentWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		091955940D2610CA009C7F12 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				091955950D2610F9009C7F12 /* PacketDumpDoc.h */,
+				091955960D2610F9009C7F12 /* PacketDumpDoc.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09E970210D2F32460079462F /* AppKit.framework */,
+				091954A40D25FF59009C7F12 /* Foundation.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* CapKit_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093BA8E70D16838B00F6D2BF /* PCapStats.h in Headers */,
+				093BA8E80D16838B00F6D2BF /* PCapSession.h in Headers */,
+				093BA8EC0D16838B00F6D2BF /* PCapPacket.h in Headers */,
+				093BA8F50D16854300F6D2BF /* PCapAddress.h in Headers */,
+				095073D20D1C9DEF00A11309 /* PCapDeviceList.h in Headers */,
+				095073DE0D1CE7A700A11309 /* PCapDevice.h in Headers */,
+				094375BE0D1E5CF1008B6C19 /* CapKit.h in Headers */,
+				094375C00D1E5D58008B6C19 /* Globals.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0919556F0D260599009C7F12 /* SimpleCap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 091955750D26059B009C7F12 /* Build configuration list for PBXNativeTarget "SimpleCap" */;
+			buildPhases = (
+				09E973090D308E400079462F /* Copy Frameworks */,
+				0919556C0D260599009C7F12 /* Resources */,
+				0919556D0D260599009C7F12 /* Sources */,
+				0919556E0D260599009C7F12 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09E972A40D3085940079462F /* PBXTargetDependency */,
+			);
+			name = SimpleCap;
+			productName = SimpleCap;
+			productReference = 091955700D260599009C7F12 /* SimpleCap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DC2EF4F0486A6940098B216 /* CapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "CapKit" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CapKit;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = CapKit;
+			productReference = 8DC2EF5B0486A6940098B216 /* CapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "CapKit" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* CapKit */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* CapKit */,
+				0919556F0D260599009C7F12 /* SimpleCap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0919556C0D260599009C7F12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091955AC0D26132D009C7F12 /* MainMenu.xib in Resources */,
+				091955AE0D261347009C7F12 /* DocumentWindow.xib in Resources */,
+				09E973470D30A5610079462F /* license.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				09E973460D30A5610079462F /* license.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0919556D0D260599009C7F12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091955970D2610F9009C7F12 /* PacketDumpDoc.m in Sources */,
+				09E9724D0D2F34C70079462F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093BA8EA0D16838B00F6D2BF /* PCapStats.m in Sources */,
+				093BA8EB0D16838B00F6D2BF /* PCapSession.m in Sources */,
+				093BA8EE0D16838B00F6D2BF /* PCapPacket.m in Sources */,
+				093BA8F60D16854300F6D2BF /* PCapAddress.m in Sources */,
+				095073D30D1C9DEF00A11309 /* PCapDeviceList.m in Sources */,
+				095073DF0D1CE7A700A11309 /* PCapDevice.m in Sources */,
+				0950740C0D1CEFF200A11309 /* Util.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09E972A40D3085940079462F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* CapKit */;
+			targetProxy = 09E972A30D3085940079462F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		091955730D26059A009C7F12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/SDKs/MacOSX10.5.sdk/System/Library/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = SimpleCap/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SimpleCap;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		091955740D26059A009C7F12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/SDKs/MacOSX10.5.sdk/System/Library/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = SimpleCap/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = SimpleCap;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/SDKs/MacOSX10.5.sdk/System/Library/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CapKit_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/SDKs/MacOSX10.5.sdk/usr/lib\"",
+				);
+				OTHER_LDFLAGS = "-lpcap";
+				PRODUCT_NAME = CapKit;
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/SDKs/MacOSX10.5.sdk/System/Library/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CapKit_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/SDKs/MacOSX10.5.sdk/usr/lib\"",
+				);
+				OTHER_LDFLAGS = "-lpcap";
+				PRODUCT_NAME = CapKit;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		091955750D26059B009C7F12 /* Build configuration list for PBXNativeTarget "SimpleCap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				091955730D26059A009C7F12 /* Debug */,
+				091955740D26059A009C7F12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "CapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "CapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
